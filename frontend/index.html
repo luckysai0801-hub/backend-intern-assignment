@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Intern Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Backend Intern Assignment</h2>
+
+    <div class="box">
+        <h3>Register</h3>
+        <input type="text" id="regName" placeholder="Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div class="box">
+        <h3>Login</h3>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="box">
+        <h3>Create Task</h3>
+        <input type="text" id="taskTitle" placeholder="Title">
+        <input type="text" id="taskDesc" placeholder="Description">
+        <button onclick="createTask()">Create Task</button>
+    </div>
+
+    <div class="box">
+        <h3>My Tasks</h3>
+        <button onclick="getTasks()">Load Tasks</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
